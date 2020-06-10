@@ -1,8 +1,207 @@
-body {
+@import url("./vendor/inter-font.css");
+
+body { /*this is from the old exercise*/
   margin: 0;
 }
 
+.page {
+  min-width: 300px;
+  max-width: 1600px;
+  margin: 0 auto;
+  color: white;
+  background-color: #2a2c2f;
+  font-family: "Inter";
+}
+
 .header {
-  height: 100px;
-  background-color: #000;
+  padding-top: 34px;
+  padding-bottom: 58px;
+  margin: 0 148px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.logo {
+  max-width: 190px;
+  max-height: 44px;
+}
+
+.header__lang-link { 
+  color: white;
+  font-size: 24px;
+  line-height: 28px;
+  margin-left: 18px;
+  text-decoration: none;
+}
+
+.header__lang-link:active {
+  text-decoration: underline;
+}
+
+.content {
+}
+
+.lead {
+  margin: 0 148px;
+  max-width: 98vw;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.lead__title {
+  font-style: normal;
+  font-weight: 900;
+  font-size: 96px;
+  line-height: 100px;
+  max-width: 720px;
+  max-height: 200px;
+  text-align: center;
+  margin: 0;
+  padding: 0;
+}
+
+.lead__subtitle {
+  margin-top: 32px;
+  margin-bottom: 64px;
+  font-size: 30px;
+  line-height: 36px;
+  text-align: center;
+  max-width: 620px;
+}
+
+.lead__image-container {
+  margin: auto;
+}
+
+.lead__image {
+  object-fit: cover;
+  object-position: center;
+  max-width: 984px;
+  max-height: 615px;
+}
+
+.lead__caption {
+  font-style: normal;
+  font-weight: normal;
+  font-size: 10px;
+  line-height: 140%;
+  letter-spacing: 0.15em;
+  text-transform: uppercase;
+  margin-top: 8px;
+}
+
+.intro {
+  margin: 0 148px;
+  background-color: red;
+}
+
+.intro__title {
+  font-weight: 900;
+  font-size: 54px;
+  line-height: 107%;
+}
+
+.intro__text {
+
+}
+
+.intro__list {
+  list-style: none;
+}
+
+
+.intro__list-item {
+
+}
+
+.intro__list-bold-text {
+  font-weight: bold;
+}
+
+.photo-grid {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  grid-template-rows: repeat(3, 1fr);
+  justify-content: center;
+ 
+}
+
+.photo-grid__item {
+  max-width: 352px;
+  max-height: 264px;
+}
+
+.places {
+  background-color: pink;
+}
+
+.place {
+  background-color: lightblue;
+}
+
+.place__title {
+
+}
+
+.place__image {
+
+}
+
+.place__website {
+
+}
+
+.place__url-heading {
+
+}
+
+.place__link {
+
+}
+
+.place__paragraph {
+
+}
+
+.cover {
+  margin-bottom: 68px;
+}
+
+.cover__title {
+
+}
+
+.cover__subtitle {
+
+}
+
+.cover__overlay {
+
+}
+
+.cover__background {
+
+}
+
+.footer {
+  display: flex;
+  justify-content: space-between;
+}
+
+.footer__links {
+
+}
+
+.footer__link {
+
+}
+
+.footer__copyright {
+
+}
+
+.footer__heart {
+  color: white;
 }
