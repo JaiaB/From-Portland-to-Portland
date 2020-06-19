@@ -4,12 +4,10 @@
 
 .header { 
   grid-area: header;
-  grid-template-areas: "logo nav";
-  grid-template-columns: 2, 1fr;
   padding-left: 148px;
   padding-right: 148px;
-  display: flex;
-  justify-content: space-between;
+  padding-top: 42px;
+  padding-bottom: 58px;
 }
 
 

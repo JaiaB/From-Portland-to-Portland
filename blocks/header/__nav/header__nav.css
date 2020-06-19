@@ -1,6 +1,8 @@
 .header__nav {
-  grid-area: nav;
-  grid-column: -1;
-  padding-top: 42px;
-  padding-bottom: 58px;
+  margin: 0 auto;
+  padding: 0;
+  max-width: 1280px;
+  background: blue;
+  display: flex;
+  justify-content: space-between;
 }
