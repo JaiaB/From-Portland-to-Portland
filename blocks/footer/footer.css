@@ -1,17 +1,13 @@
+@import url('./__nav/footer__nav.css');
 @import url('./__copyright/footer__copyright.css');
 @import url('./__links/footer__links.css');
 @import url('./__link/footer__link.css');
 @import url('./__heart/footer__heart.css');
 
 .footer {
-  font-size: 1rem;
-  line-height: 112%;
-  font-weight: 400;
-  margin-top: 92px;
   grid-area: footer;
+  margin-top: 92px;
   padding: 0 48px 24px 48px;
-  display: flex;
-  justify-content: space-between;
 }
 
 
