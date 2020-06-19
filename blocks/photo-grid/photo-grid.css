@@ -1,0 +1,95 @@
+@import url('./__item/photo-grid__item.css');
+
+.photo-grid {
+  grid-area: photo-grid;
+  grid-column: 1 / -1;
+  display: grid;
+  grid-gap: 16px;
+  grid-template-columns: repeat(4, 1fr);
+  grid-template-rows: repeat(3, 1fr);
+  max-width: 1184px;
+  margin: 0 auto;
+  justify-content: center;
+  padding-bottom: 92px;
+}
+
+@media  (max-width: 1200px) {
+
+  .photo-grid {
+    grid-area: photo-grid;
+    grid-column: 1 / -1;
+    max-width: 928px;
+    margin: 0 auto;
+    grid-gap: 14px;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: repeat(4, 1 fr);
+  }
+
+  .photo-grid__item {
+    max-width: 300px;
+    max-height: 225px;
+  }
+}
+
+/*this works until 768px*/
+@media  (max-width: 946px)   { 
+
+  .photo-grid {
+    grid-area: photo-grid;
+    max-width: 720px;
+    padding-bottom: 64px;
+    margin: 0 auto;
+    grid-gap: 16px;
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  .photo-grid__item {
+    max-width: 352px;
+    max-height: 264px;
+  }
+}
+
+/*from this point on i have to make just one column that will adapt on its own this works beautifully up to 382px*/
+
+@media (max-width: 767px)   { 
+  .photo-grid {
+    grid-template-columns: 1fr;
+    max-width: calc(100vw - 24px);
+    padding-bottom: 64px;
+    margin: 0 auto;
+  }
+  .photo-grid__item {
+    max-width: 100%;
+    margin: 0 auto;
+  }
+}
+
+/*weird breakpoint*/
+@media (max-width: 370px) {
+  .photo-grid {
+    grid-template-columns: 320px;
+    grid-gap: 12px;
+    margin-left: 16px;
+  }
+
+  .photo-grid__item {
+    max-width: 288px;
+    margin: 0 auto;
+  }
+}
+
+@media  (max-width: 320px) {
+  .photo-grid {
+    grid-gap: 12px;
+    grid-template-columns: 320px ;
+    max-width: 288px;
+  }
+
+  .photo-grid__item {
+    max-width: 288px;
+    max-height: 216px;
+    margin: 0 auto;
+  }
+}
+
+

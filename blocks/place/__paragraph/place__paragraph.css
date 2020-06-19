@@ -1,0 +1,10 @@
+.place__paragraph {
+  grid-area: place__paragraph;
+  margin-bottom: 24px;
+  margin-left: 40px;
+  font-weight: 400;
+  font-size: 1.125rem;
+  line-height: 167%;
+  max-width: 484px;
+  grid-column-start: 2;
+}

@@ -1,0 +1,23 @@
+.logo {
+  grid-area: logo;
+  grid-column: 1;
+  padding-top: 34px;
+  padding-bottom: 58px;
+  max-width: 190px;
+  max-height: 44px;
+}
+
+@media(max-width: 400px) {
+  .logo {
+    grid-area: logo;
+    max-width: 159px;
+  }
+}
+
+@media (max-width: 320px) {
+  .logo {
+   max-width: 156px;
+   max-height: 36px;
+   padding: 0;
+  }
+}

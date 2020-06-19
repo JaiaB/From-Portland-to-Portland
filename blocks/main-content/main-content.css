@@ -1,0 +1,43 @@
+.main-content {
+  grid-area: main-content;
+  display: grid;
+  max-width: 1184px;
+  grid-template-areas: 'lead lead lead lead' 
+  'intro intro intro .' 
+  'photo-grid photo-grid photo-grid photo-grid'
+  'places places places places'
+  'cover cover cover cover';
+  grid-template-columns: repeat(4, 1fr);
+  margin: 0 auto;
+}
+
+@media  (max-width: 1200px) {
+  .main-content {
+    grid-area: main-content;
+    max-width: 984px;
+    grid-template-areas: 
+    'lead lead lead lead'
+    'photo-grid photo-grid photo-grid . '
+    'places places '
+    'cover cover cover cover';
+  }
+}
+
+@media  (max-width: 768px) and (max-width: 946px) {
+  .main-content {
+    grid-template-areas: 'lead lead' 
+    'intro intro' 
+    'photo-grid photo-grid'
+    'places places'
+    'cover cover';
+    grid-template-columns: repeat(2, 1fr);
+    max-width: 768px;
+    margin: 0 auto;
+  }
+}
+
+@media (max-width: 320px) {
+  .main-content {
+    max-width: 320px;
+  }
+}

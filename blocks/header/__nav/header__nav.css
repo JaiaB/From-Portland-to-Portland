@@ -1,0 +1,6 @@
+.header__nav {
+  grid-area: nav;
+  grid-column: -1;
+  padding-top: 42px;
+  padding-bottom: 58px;
+}

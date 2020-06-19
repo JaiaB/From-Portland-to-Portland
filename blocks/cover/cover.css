@@ -1,0 +1,75 @@
+@import url('./__item/cover__item.css');
+@import url('./__subtitle/cover__subtitle.css');
+@import url('./__title/cover__title.css');
+
+.cover {
+  grid-area: cover;
+  grid-column: 1 / -1;
+  width: 100%;
+  margin: 0 auto;
+}
+
+@media (max-width: 768px) {
+
+  .cover {
+    max-width: 768px;
+    max-height: 480px;
+  }
+
+  .cover__item {
+    min-height: 480px;
+  }
+
+  .cover__item::before {
+   min-height: 100%;
+  }
+
+  .cover__title {
+    font-size: 4rem;
+    line-height: 109%;
+    margin-top: 51px;
+  }
+
+  .cover__subtitle {
+    max-width: 288px;
+    font-size: 1rem;
+    line-height: 114%;
+    padding-top: 0;
+  }
+  
+}
+
+@media (max-width: 600px) {
+  .cover__title {
+    font-size: 3rem;
+  }
+}
+
+@media (max-width: 500px) {
+  .cover {
+    margin-top: 16px;
+    max-width: 320px;
+    max-height: 200px;
+  }
+
+  .cover__item {
+    min-height: 200px;
+  }
+
+  .cover__item::before {
+   min-height: 200px;
+  }
+  
+  .cover__title {
+    font-size: 2rem;
+    line-height: 109%;
+    margin-top: 51px;
+  }
+
+  .cover__subtitle {
+    max-width: 288px;
+    font-size: 0.875rem;
+    line-height: 114%;
+    padding-top: 0;
+  }
+}

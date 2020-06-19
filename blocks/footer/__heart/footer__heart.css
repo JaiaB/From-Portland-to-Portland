@@ -1,0 +1,9 @@
+.footer__heart {
+  color: white;
+  transition: color ease-in-out 0.2s;
+}
+
+.footer__heart:hover {
+  color: rgb(216, 36, 159);
+  cursor: pointer;
+}

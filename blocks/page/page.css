@@ -1,0 +1,20 @@
+.page {
+  display: grid;
+  grid-template-areas: 'header header  header header'
+  'main-content main-content main-content main-content'
+  'footer footer footer footer';
+  margin: 0 auto;
+  color: white;
+  background-color: #2a2c2f;
+  font-family: "Inter";
+}
+
+@media (max-width: 320px) {
+  .page {
+    font-size: 1rem;
+    line-height: 162%;
+    display: block;
+    text-align: left;
+    width: 100vw;
+  }
+}

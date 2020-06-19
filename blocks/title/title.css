@@ -1,0 +1,7 @@
+@media (max-width: 320px) {
+  .title {
+    font-size: 2rem;
+    line-height: 109%;
+    text-align: left;
+  }
+}
