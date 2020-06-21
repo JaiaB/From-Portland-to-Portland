@@ -2,6 +2,12 @@
   margin: 0;
 }
 
+@media(max-width: 768px) {
+  .footer__copyright {
+    font-size: 14px;
+  }
+}
+
 @media (max-width: 500px) {
   .footer__copyright {
     font-size: 0.875rem;

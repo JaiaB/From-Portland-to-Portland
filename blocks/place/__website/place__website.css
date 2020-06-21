@@ -34,6 +34,7 @@
     grid-area: place__website;
     margin-left: 16px;
     margin-bottom: 32px;
+    display: none;
   }
 }
 
@@ -42,5 +43,6 @@
     grid-area: place__website;
     margin-left: 16px;
     margin-bottom: 32px;
+    display: none;
   }
 }

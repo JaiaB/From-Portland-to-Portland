@@ -3,10 +3,9 @@
 @import url('./__website/place__website.css');
 @import url('./__url-heading/place__url-heading.css');
 @import url('./__link/place__link.css');
+@import url('./__description/place__description.css');
 @import url('./__paragraph/place__paragraph.css');
-@import url('./__paragraph/_first/place__paragraph_first.css');
-@import url('./__paragraph/_second/place__paragraph_second.css');
-@import url('./__paragraph/_price/place__paragraph_price.css');
+
 
 .place {
   margin-bottom: 80px;
@@ -71,7 +70,7 @@
     'place__paragraph_first'
     'place__paragraph_second'
     'place__paragraph_price';
-    margin-bottom: 48px;
+    padding-bottom: 48px;
     margin: 0 auto;
   }
 
