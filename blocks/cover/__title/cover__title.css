@@ -8,3 +8,25 @@
   margin: 0 auto;
   padding-bottom: 16px;
 }
+
+@media (max-width: 768px) {
+  .cover__title {
+    font-size: 4rem;
+    line-height: 109%;
+    margin-top: 51%;
+  }
+}
+
+@media (max-width: 600px) {
+  .cover__title {
+    font-size: 3rem;
+  }
+}
+
+@media (max-width: 500px) {
+  .cover__title {
+    font-size: 2rem;
+    line-height: 109%;
+    margin-top: 51px;
+  }
+}

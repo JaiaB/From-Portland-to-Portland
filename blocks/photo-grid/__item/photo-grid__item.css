@@ -2,3 +2,43 @@
   max-width: 284px;
   max-height: 212px;
 }
+
+@media  (max-width: 1200px) {
+  .photo-grid__item {
+    max-width: 300px;
+    max-height: 225px;
+  }
+}
+
+
+/*this works until 768px*/
+@media  (max-width: 946px)   { 
+  .photo-grid__item {
+    max-width: 352px;
+    max-height: 264px;
+  }
+}
+
+/*from this point on i have to make just one column that will adapt on its own this works beautifully up to 382px*/
+@media (max-width: 767px)   {
+  .photo-grid__item {
+    max-width: 100%;
+    margin: 0 auto;
+  }
+}
+
+/*weird breakpoint*/
+@media (max-width: 370px) {
+  .photo-grid__item {
+    max-width: 288px;
+    margin: 0 auto;
+  }
+}
+
+@media  (max-width: 320px) {
+  .photo-grid__item {
+    max-width: 288px;
+    max-height: 216px;
+    margin: 0 auto;
+  }
+}

@@ -35,14 +35,6 @@
     max-width: 80vw;
     margin: 0;
   }
-
-  .intro__title {
-    font-size: 2rem;
-  }
-
-  .intro__subtitle {
-    font-size: 1.5rem;
-  }
 }
 
 @media (max-width: 320px) {
@@ -53,9 +45,4 @@
     margin: 0 auto;
     grid-column: 1 / -1;
   }
-
-  .intro__subtitle {
-    line-height: 125%;
-  }
-
 }

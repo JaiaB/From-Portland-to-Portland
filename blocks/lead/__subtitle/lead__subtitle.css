@@ -7,3 +7,28 @@
   margin: 0 auto;
   padding-bottom: 64px;
 }
+
+@media(max-width: 768px) {
+  .lead__subtitle {
+    font-size: 1.5rem;
+    margin: 0 auto;
+    max-width: 480px;
+   }
+}
+
+/*this is good up to 396px*/
+@media(max-width: 498px) {
+  .lead__subtitle {
+    font-size: 1.3rem;
+    margin: 0 auto;
+    max-width: 300px;
+   }
+}
+
+@media(max-width: 400px) {
+  .lead__subtitle {
+    line-height: 125%;
+    font-size: 1rem;
+    padding-bottom: 40px;
+  }
+}

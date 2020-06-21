@@ -5,3 +5,16 @@
   font-size: 0.75rem;
   line-height: 150%;
 }
+
+
+@media (max-width: 400px) {
+  .intro__subtitle {
+    font-size: 1.5rem;
+  }
+}
+
+@media (max-width: 320px) {
+  .intro__subtitle {
+    line-height: 125%;
+  }
+}
