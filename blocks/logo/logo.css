@@ -3,12 +3,6 @@
   max-height: 44px;
 }
 
-@media(max-width: 400px) {
-  .logo {
-    grid-area: logo;
-    max-width: 159px;
-  }
-}
 
 @media (max-width: 320px) {
   .logo {

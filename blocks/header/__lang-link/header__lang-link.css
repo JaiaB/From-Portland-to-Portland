@@ -13,16 +13,9 @@
   opacity: 0.5;
 }
 
-@media(max-width: 400px) {
-  .header__lang-link {
-    font-size: 1.125rem;
-    line-height: 133%;
-  }
-}
-
 @media(max-width: 320px) {
-  .header__lang-link  {
-    font-size: 1.125rem;
-    line-height: 133%;
+  .header__lang-link {
+    font-size: 18px;
+    line-height: 24px;
   }
 }

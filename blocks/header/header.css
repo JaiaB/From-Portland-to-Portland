@@ -11,22 +11,27 @@
   padding-bottom: 58px;
 }
 
-
-
-@media(max-width: 400px) {
-
+@media(max-width: 1024px) {
   .header {
-    grid-area: header;
-    grid-template-areas: "logo nav";
-    grid-template-columns: 400px;
-    margin: 0;
-    max-width: 95vw;
+    padding-left: 48px;
+    padding-right: 48px;
   }
 }
 
-@media (max-width: 320px) {
+@media (max-width: 768px) {
   .header {
+    padding-left: 24px;
+    padding-right: 24px;
+  }
+}
+
+@media(max-width: 320px) {
+  .header {
+    grid-area: header;
+    grid-template-columns: 400px;
+    margin: 0;
     padding: 20px 16px 50px 16px;
     align-items: center;
   }
 }
+
