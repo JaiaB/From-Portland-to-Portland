@@ -1,0 +1,9 @@
+.scale-effect {
+  transition: transform 0.2s ease-in-out;
+}
+
+.scale-effect:hover  {
+  transform: scale(1.3);
+  cursor: pointer;
+  box-shadow: -10px 14px 8px rgba(29, 28, 28, 0.639);
+}
