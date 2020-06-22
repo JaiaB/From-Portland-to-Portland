@@ -11,10 +11,10 @@
 
 @media (max-width: 320px) {
   .page {
-    font-size: 1rem;
+    font-size: 16px;
     line-height: 162%;
     display: block;
     text-align: left;
-    width: 100vw;
+
   }
 }
