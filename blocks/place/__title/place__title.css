@@ -1,10 +1,9 @@
 .place__title {
   max-width: 460px;
-  margin-top: 0;
-  grid-area: place__title;
-  grid-column-start: 1;
-  font-size: 4.5rem;
-  line-height: 106%;
+  margin: 0;
+  padding-bottom: 48px;
+  font-size: 72px;
+  line-height: 76px;
   font-weight: 900;
 }
 
@@ -12,35 +11,21 @@
   .place__title {
     max-width: 440px;
   }
-
 }
 
 @media (max-width: 768px)  {
   .place__title {
     max-width: 340px;
-    font-size: 2.625rem;
-    line-height: 110%;
+    font-size: 42px;
+    line-height: 46px;
   }
 }
 
-/*this is nice until 500px*/
-@media (max-width: 700px) {
-  .place__title {
-    grid-area: place__title;
-    margin-left: 16px;
-  }
-}
-
-@media (max-width: 500px) {
-  .place__title {
-    grid-area: place__title;
-    margin-left: 16px;
-  }
-}
 
 @media (max-width: 320px) {
   .place__title {
-    grid-area: place__title;
-    margin-left: 16px;
+    max-width: 288px;
+    margin: 0 auto;
+    padding-bottom: 32px;
   }
 }

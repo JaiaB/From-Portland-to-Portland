@@ -1,0 +1,16 @@
+.place__description {
+  max-width: 484px;
+  margin: 0;
+}
+
+@media(max-width: 768px) {
+  .place__description {
+    max-width: 352px;
+  }
+}
+
+@media(max-width: 320px) {
+  .place__description {
+    max-width: 320px;
+  }
+}

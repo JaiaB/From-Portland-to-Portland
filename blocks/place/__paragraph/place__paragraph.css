@@ -1,58 +1,32 @@
 .place__paragraph {
-  grid-area: place__paragraph;
-  margin-bottom: 24px;
-  margin-left: 40px;
+  padding-bottom: 24px;
+  margin: 0;
   font-weight: 400;
-  font-size: 1.125rem;
-  line-height: 167%;
+  font-size: 18px;
+  line-height: 30px;
   max-width: 484px;
-  grid-column-start: 2;
+}
+
+.place__paragraph:last-child {
+  padding-bottom: 0;
 }
 
 @media(max-width: 1024px) {
-
   .place__paragraph {
     max-width: 456px;
-    margin-left: 32px;
   }
 }
 
 @media(max-width: 768px) {
-
   .place__paragraph {
-    max-width: 352px;
-    font-size: 1rem;
-    line-height: 162%;
-    margin-left: 28px;
+    font-size: 16px;
+    line-height: 26px;
   }
 }
-
-/*this is nice until 500px*/
-@media(max-width: 700px){
-  .place__paragraph {
-    font-size: 1rem;
-    line-height: 162%;
-    max-width: 420px;
-    margin-left: 0;
-  }
-}
-
-@media(max-width: 500px) {
-  .place__paragraph {
-    font-size: 1rem;
-    line-height: 162%;
-    max-width: 300px;
-    margin: 0;
-  }
-}
-
 
 @media (max-width: 320px) {
   .place__paragraph {
-    font-size: 1rem;
-    line-height: 162%;
     padding-left: 16px;
     padding-right: 16px;
-    max-width: 288px;
   }
 }
