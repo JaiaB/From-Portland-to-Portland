@@ -1,8 +1,8 @@
 .lead__title {
   max-width: 720px;
   font-weight: 900;
-  font-size: 6rem;
-  line-height: 104%;
+  font-size: 96px;
+  line-height: 100px;
   text-align: center;
   margin: 0 auto;
   padding-bottom: 32px;
@@ -13,23 +13,14 @@
     font-size: 96px;
     line-height: 100px;
     margin: 0 auto;
-    max-width: 600px;
+    max-width: 720px;
   }
 }
 
-/*this is good up to 396px*/
-@media (max-width: 498px) {
-  .lead__title {
-    font-size: 3.5rem;
-    max-width: 400px;
-  }
-}
-
-
-@media(max-width: 400px) {
+@media(max-width: 320px) {
   .lead__title  {
-    font-size: 2.5rem;
-    line-height: 110%;
+    font-size: 40px;
+    line-height: 44px;
     max-width: 288px;
     padding-bottom: 16px;
   }
