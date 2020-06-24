@@ -4,7 +4,7 @@
   line-height: 14px;
 }
 
-@media (max-width: 320px) {
+@media (max-width: 500px) {
   .footer__copyright {
     text-align: left;
     margin-top: 16px;

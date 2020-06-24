@@ -10,7 +10,7 @@
   cursor: pointer;
 }
 
-@media(max-width: 320px) {
+@media(max-width: 500px) {
   .footer__link {
    display: block;
    padding-right: 0;

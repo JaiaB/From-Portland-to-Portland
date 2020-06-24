@@ -3,23 +3,31 @@
   margin: 0 auto;
   display: flex;
   justify-content: space-between;
+  align-items: center;
 }
 
-@media (max-width: 1024px) {
+@media screen and (max-width: 1024px) {
   .footer__nav {
     max-width: 928px;
   }
 }
 
-@media(max-width: 768px) {
+@media screen and (max-width: 768px) {
   .footer__nav {
     max-width: 720px;
   }
 }
 
-@media (max-width: 320px) {
+@media screen and (max-width: 500px) {
+  .footer__nav {
+    flex-direction: column;
+    text-align: left;
+    align-items: flex-start;
+  }
+}
+
+@media screen and (max-width: 320px) {
   .footer__nav  {
    max-width: 288px;
-    flex-direction: column;
   }
 }
