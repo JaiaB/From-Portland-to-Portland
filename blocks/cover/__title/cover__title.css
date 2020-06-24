@@ -1,32 +1,25 @@
 .cover__title {
   z-index: 2;
   max-width: 656px;
-  font-size: 4.5rem;
-  line-height: 106%;
+  font-size: 72px;
+  line-height: 76px;
   font-weight: 900;
   text-align: center;
   margin: 0 auto;
   padding-bottom: 16px;
 }
 
-@media (max-width: 768px) {
-  .cover__title {
-    font-size: 74px;
-    line-height: 76px;
-    margin-top: 51%;
-  }
-}
-
 @media (max-width: 600px) {
   .cover__title {
-    font-size: 3rem;
+    font-size: 48px;
+    line-height: 52px;
   }
 }
 
 @media (max-width: 500px) {
   .cover__title {
-    font-size: 2rem;
-    line-height: 109%;
-    margin-top: 51px;
+    font-size: 32px;
+    line-height: 35px;
+    margin: 0;
   }
 }

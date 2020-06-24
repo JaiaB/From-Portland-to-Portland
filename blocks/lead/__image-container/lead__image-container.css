@@ -10,13 +10,14 @@
 
 @media(max-width: 768px) {
   .lead__image-container {
-    max-width: 768px;
+    max-width: 100vw;
   }
 }
 
-@media (max-width: 320px)  {
+@media (max-width: 420px)  {
   .lead__image-container {
     margin: 0;
     max-width: 100vw;
+    height: 100%;
   }
 }

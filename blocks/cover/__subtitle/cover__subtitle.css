@@ -2,27 +2,17 @@
   z-index: 2;
   max-width: 320px;
   font-weight: 400;
-  font-size: 1.125rem;
-  line-height: 122%;
+  font-size: 18px;
+  line-height: 22px;
   text-align: center;
   margin: 0 auto;
   padding-top: 16px;
 }
 
-@media (max-width: 768px) {
-  .cover__subtitle {
-    max-width: 288px;
-    font-size: 18px;
-    line-height: 22px;
-    padding-top: 0;
-  }
-}
-
 @media (max-width: 500px) {
   .cover__subtitle {
     max-width: 288px;
-    font-size: 0.875rem;
-    line-height: 114%;
-    padding-top: 0;
+    font-size: 14px;
+    line-height: 16px;
   }
 }

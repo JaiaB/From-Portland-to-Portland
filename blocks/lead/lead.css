@@ -14,24 +14,23 @@
   justify-content: center;
 }
 
-@media (max-width: 1024px) {
+@media screen and (max-width: 1024px) {
   .lead {
     max-width: 928px;
     margin: auto;
   }
 }
 
-@media  (max-width: 768px) {
+@media  screen and (max-width: 768px) {
   .lead {
-    max-width: 768px;
+    max-width: 100vw;
   }
 }
 
-@media (max-width: 320px)  {
+@media screen and (max-width: 320px)  {
   .lead {
     display: block;
     max-width: 320px;
     margin: 0;
   }
-
 }

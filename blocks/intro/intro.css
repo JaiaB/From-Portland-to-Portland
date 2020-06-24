@@ -24,7 +24,6 @@
 
 @media  (max-width: 768px) and (max-width: 979px ) {
   .intro {
-    grid-area: intro;
     padding: 88px 24px ;
     max-width: 720px;
   }
@@ -34,13 +33,13 @@
   .intro {
     max-width: 80vw;
     margin: 0;
+    padding-top: 64px;
+    padding-bottom: 64px;
   }
 }
 
 @media (max-width: 320px) {
   .intro {
-    padding-top: 64px;
-    padding-bottom: 64px;
     max-width: 288px;
     margin: 0 auto;
     grid-column: 1 / -1;
