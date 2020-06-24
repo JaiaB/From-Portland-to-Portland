@@ -9,6 +9,12 @@
   }
 }
 
+@media screen and (max-width: 734px) {
+  .place__description {
+    max-width: 100vw;
+  }
+}
+
 @media(max-width: 320px) {
   .place__description {
     max-width: 320px;
