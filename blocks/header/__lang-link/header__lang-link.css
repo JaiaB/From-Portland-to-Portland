@@ -1,7 +1,7 @@
 .header__lang-link { 
   padding: 0;
   color: white;
-  font-size: 1.5rem;
+  font-size: 24px;
   line-height: 28px;
   margin-left: 18px;
   text-decoration: none;
@@ -13,7 +13,7 @@
   opacity: 0.5;
 }
 
-@media(max-width: 320px) {
+@media(max-width: 500px) {
   .header__lang-link {
     font-size: 18px;
     line-height: 24px;

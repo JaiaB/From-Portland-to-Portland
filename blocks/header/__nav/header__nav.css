@@ -4,9 +4,9 @@
   max-width: 1280px;
   display: flex;
   align-content: center;
+  align-items: center; 
   justify-content: space-between;
 }
-
 
 @media (max-width: 1024px) {
   .header__nav {
@@ -14,18 +14,21 @@
   }
 }
 
-
-@media  (max-width: 768px) {
+@media screen and  (max-width: 768px) {
   .header__nav {
     max-width: 720px;
   }
 }
 
-@media(max-width: 320px) {
+@media screen and (max-width: 500px) {
   .header__nav {
-    grid-area: nav;
     margin: auto;
     padding-top: 6px;
+  }
+}
+
+@media screen and (max-width: 320px) {
+  .header__nav {
     max-width: 288px;
   }
 }
