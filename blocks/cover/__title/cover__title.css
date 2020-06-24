@@ -9,14 +9,14 @@
   padding-bottom: 16px;
 }
 
-@media (max-width: 600px) {
+@media screen and  (max-width: 650px) {
   .cover__title {
     font-size: 48px;
     line-height: 52px;
   }
 }
 
-@media (max-width: 500px) {
+@media screen and  (max-width: 500px) {
   .cover__title {
     font-size: 32px;
     line-height: 35px;
