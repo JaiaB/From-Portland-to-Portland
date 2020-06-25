@@ -8,11 +8,28 @@
   }
 }
 
+/*breakpoint*/
+@media screen and (max-width: 928px) {
+  .lead__image-container {
+    max-width: 100%;
+    margin: 0;
+  }
+}
+
 @media(max-width: 768px) {
   .lead__image-container {
     max-width: 100vw;
   }
 }
+
+/*breakpoint*/
+@media screen and (max-width: 766px) {
+  .lead__image-container {
+    max-width: 100%;
+    margin: 0;
+  }
+}
+
 
 @media (max-width: 420px)  {
   .lead__image-container {
