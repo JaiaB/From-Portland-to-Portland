@@ -9,3 +9,11 @@
    margin-bottom: 18px;
   }
 }
+
+@media screen and (max-width: 320px) {
+  .photo-grid__item {
+    max-width: 288px;
+    max-height: 216px;
+    margin: 0 auto;
+  }
+}
