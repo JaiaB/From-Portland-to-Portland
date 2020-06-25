@@ -33,7 +33,6 @@
 
 @media (max-width: 320px) {
   .main-content {
-    display: column;
     max-width: 320px;
   }
 }
