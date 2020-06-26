@@ -4,6 +4,7 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <meta name="description" content="Responsive Design">
+  <link rel="preload" href="./vendor/fonts/inter-400.woff2" as="font" type="font/woff2" crossorigin>
   <link href="../pages/index.css" rel="stylesheet">
   <link href="../vendor/normalize.css" rel="stylesheet">
   <title>Responsive Design by Jaia Bautista</title>
@@ -11,11 +12,13 @@
 <body>
   <div class="page">
     <header class="header">
-      <img class="logo" src="../images/logo.svg" alt="America logo">
-      <nav class="header__nav">
-        <a href="../index.html" class="header__lang-link" target="_blank">EN</a>
-        <a href="#" class="header__lang-link_current  header__lang-link">ES</a>
-      </nav>
+      <div class="header__items">
+        <img class="logo" src="../images/logo.svg" alt="America logo">
+        <ul class="header__links">
+          <li><a href="../index.html" class="header__lang-link" target="_blank">En</a></li>
+          <li><a href="#" class="header__lang-link_current  header__lang-link">Es</a></li>
+        </ul>
+      </div>
     </header>
     <main class="main-content">
       <section class="lead">
@@ -27,83 +30,94 @@
        </figure>
       </section>
       <section class="intro">
-        <h2 class="intro__title title">Conoce el país donde vives un poco mejor</h2>
+        <h2 class="intro__title">Conoce el país donde vives un poco mejor</h2>
         <p class="intro__subtitle">Eso es exactamente lo que hemos preparado para tí por medio de ésta historia de viaje</p>
         <p class="intro__text">Necesitas más acción y aventura en tu vida en lugar de la misma rutina? Desde Portland, Maine hacia Portland, Oregon vamos a llevarte en un viaje emocionante atravesando algunas regiones desconocidas de tu país. Deja el carro en casa y viaja en bicicleta desde New England donde todo comenzó. Atravesarás 12 bellos estados, cubriendo un total de 3,600 millas y lograrás 3 misiones monumentales. Celebrando y tomándote una selfie con un rockstar famoso, donando $1 a un billonario para ayudar a erradicar la polio en Africa, y hasta pasar por la casa del famoso autor Stephen King para saludar y pedirle que firme tu libro favorito.</p>
         <ul class="intro__list">
-          <li class="intro__list-item"><span class="intro__list-bold-text">Distancia (millas) </span>3,644</li>
-          <li class="intro__list-item"><span class="intro__list-bold-text">Tiempo de viaje (días) </span>22</li>
-          <li class="intro__list-item"><span class="intro__list-bold-text">Punto más alto (pies) </span>9,613</li>
-          <li class="intro__list-item"><span class="intro__list-bold-text">Punto más bajo (pies) </span>-3</li>
+          <li class="intro__list-item"><span class="intro__bold-text">Distancia (millas) </span>3,644</li>
+          <li class="intro__list-item"><span class="intro__bold-text">Tiempo de viaje (días) </span>22</li>
+          <li class="intro__list-item"><span class="intro__bold-text">Punto más alto (pies) </span>9,613</li>
+          <li class="intro__list-item"><span class="intro__bold-text">Punto más bajo (pies) </span>-3</li>
         </ul>
       </section>
       <section class="photo-grid">
-        <img class="photo-grid__item" src="../images/__item-1.jpg" alt="photo">
-        <img class="photo-grid__item" src="../images/__item-2.jpg" alt="photo">
-        <img class="photo-grid__item" src="../images/__item-3.jpg" alt="photo">
-        <img class="photo-grid__item" src="../images/__item-4.jpg" alt="photo">
-        <img class="photo-grid__item" src="../images/__item-5.jpg" alt="photo">
-        <img class="photo-grid__item" src="../images/__item-6.jpg" alt="photo">
-        <img class="photo-grid__item" src="../images/__item-7.jpg" alt="photo">
-        <img class="photo-grid__item" src="../images/__item-8.jpg" alt="photo">
-        <img class="photo-grid__item" src="../images/__item-9.jpg" alt="photo">
-        <img class="photo-grid__item" src="../images/__item-10.jpg" alt="photo">
-        <img class="photo-grid__item" src="../images/__item-11.jpg" alt="photo">
-        <img class="photo-grid__item" src="../images/__item.jpg" alt="photo"> 
+        <img class="photo-grid__item scale-effect" src="../images/__item-1.jpg" alt="photo">
+        <img class="photo-grid__item scale-effect" src="../images/__item-2.jpg" alt="photo">
+        <img class="photo-grid__item scale-effect" src="../images/__item-3.jpg" alt="photo">
+        <img class="photo-grid__item scale-effect" src="../images/__item-4.jpg" alt="photo">
+        <img class="photo-grid__item scale-effect" src="../images/__item-5.jpg" alt="photo">
+        <img class="photo-grid__item scale-effect" src="../images/__item-6.jpg" alt="photo">
+        <img class="photo-grid__item scale-effect" src="../images/__item-7.jpg" alt="photo">
+        <img class="photo-grid__item scale-effect" src="../images/__item-8.jpg" alt="photo">
+        <img class="photo-grid__item scale-effect" src="../images/__item-9.jpg" alt="photo">
+        <img class="photo-grid__item scale-effect" src="../images/__item-10.jpg" alt="photo">
+        <img class="photo-grid__item scale-effect" src="../images/__item-11.jpg" alt="photo">
+        <img class="photo-grid__item scale-effect" src="../images/__item.jpg" alt="photo"> 
       </section>
       <section class="places">
         <article class="place">
-          <h1 class=" title place__title">Maine</h1>
+          <h2 class="place__title">Maine</h2>
           <img class="place__image" src="../images/maine.jpg" alt="Maine Photograph">
           <div class="place__website">
             <p class="place__url-heading">URL</p>
             <a href="https://global.llbean.com/shop/L.L.Bean-Continental-Rucksack/122952.html?bc=50-816&csp=f&feat=816-GN1" class="place__link" target="_blank">global.llbean.com</a>
           </div>
-          <p class="place__paragraph place__paragraph_first">Aún escasamente poblado como en 1600, éste es un estado extraordinario y altamente subestimado, abundante en historia y una belleza natural majestuosa. Maine es el estado principal que no te puedes perder. Como tu viaje va a ser largo, es mejor que te prepares para el arduo trecho.</p>
-          <p class="place__paragraph place__paragraph_second">Por suerte, Maine no es solamente el hogar de los primeros colonos europeos en suelo Estadounidense en la era de los vikingos, también es el hogar de la compañía L.L. Bean, en donde puedes conseguir un morral duradero para tu expedición de tres meses. </p>
-          <p class="place__paragraph place__paragraph_price">Precio: $80-$100.</p>
+          <div class="place__description">
+            <p class="place__paragraph">Aún escasamente poblado como en 1600, éste es un estado extraordinario y altamente subestimado, abundante en historia y una belleza natural majestuosa. Maine es el estado principal que no te puedes perder. Como tu viaje va a ser largo, es mejor que te prepares para el arduo trecho.</p>
+            <p class="place__paragraph">Por suerte, Maine no es solamente el hogar de los primeros colonos europeos en suelo Estadounidense en la era de los vikingos, también es el hogar de la compañía L.L. Bean, en donde puedes conseguir un morral duradero para tu expedición de tres meses. </p>
+            <p class="place__paragraph">Precio: $80-$100.</p>
+        </div>
         </article>
         <article class="place">
-          <h1 class="title place__title">New Hampshire</h1>
+          <h2 class="place__title">New Hampshire</h2>
           <img class="place__image" src="../images/new-hampshire.jpg" alt="New Hampshire photograph">
           <div class="place__website">
             <p class="place__url-heading">URL</p>
             <a href="https://www.timberland.com/timberlandpro.html" class="place__link" target="_blank">timberland.com</a>
           </div>
-          <p class="place__paragraph place__paragraph_first">No hay un lugar mejor que New Hampshire para perderte en la naturaleza durante la primavera. Tan sereno y hermoso como lo era en el año 1700, éste estado es aún menos visitado que sus vecinos al sur. Así que aprovéchalo mientras puedas.</p>
-          <p class="place__paragraph place__paragraph_second">Como no estarás usando tu bici todo el tiempo, no te parece una buena idea comprar zapatos extra? Afortunadamente, la mejor compañía del mundo de zapatos para senderismo se encuentra aquí. Pedalea hasta la sede de Timberland en Stratham y llévate un par de botas resistentes e impermeables para mantener tus pies secos. Son ideales para el clima impredecible que encontrarás cuando atravieses los Apalaches. Éstas botas también son mejores que zapatillas de cycling cuando armes tu carpa.</p>
-          <p class="place__paragraph place__paragraph_price">Precio: $100-$150.</p>
+          <div class="place__description">
+            <p class="place__paragraph">No hay un lugar mejor que New Hampshire para perderte en la naturaleza durante la primavera. Tan sereno y hermoso como lo era en el año 1700, éste estado es aún menos visitado que sus vecinos al sur. Así que aprovéchalo mientras puedas.</p>
+            <p class="place__paragraph">Como no estarás usando tu bici todo el tiempo, no te parece una buena idea comprar zapatos extra? Afortunadamente, la mejor compañía del mundo de zapatos para senderismo se encuentra aquí. Pedalea hasta la sede de Timberland en Stratham y llévate un par de botas resistentes e impermeables para mantener tus pies secos. Son ideales para el clima impredecible que encontrarás cuando atravieses los Apalaches. Éstas botas también son mejores que zapatillas de cycling cuando armes tu carpa.</p>
+            <p class="place__paragraph">Precio: $100-$150.</p>
+        </div>
+          
         </article>
         <article class="place">
-          <h1 class="title place__title">New York</h1>
+          <h2 class="place__title">New York</h2>
           <img class="place__image" src="../images/new-york.jpg" alt="New York photograph">
           <div class="place__website">
             <p class="place__url-heading">URL</p>
             <a href="https://www.ge.com/about-us" class="place__link" target="_blank">ge.com</a>
           </div>
-          <p class="place__paragraph place__paragraph_first">No solamente famoso por "La Gran Manzana", el estado de New York también presenta otras razones para pasar a la historia. Desde finales de 1800, Schenectady, "La Ciudad que ilumina y acarrea el mundo", ha sido el hogar de la famosa compañía General Electric.</p>
-          <p class="place__paragraph place__paragraph_second">Es aquí donde nacieron los generadores modernos, así como los medios contemporáneos para transmisión de energía. Por eso pensamos que éste es el lugar perfecto para comprar una linterna dínamo para tu bici y que te sirva de ayuda en los caminos solitarios y oscuros durante tu aventura. Una linterna de GE te costará aproximadamente $10-$20.</p>
+          <div class="place__description">
+            <p class="place__paragraph">No solamente famoso por "La Gran Manzana", el estado de New York también presenta otras razones para pasar a la historia. Desde finales de 1800, Schenectady, "La Ciudad que ilumina y acarrea el mundo", ha sido el hogar de la famosa compañía General Electric.</p>
+            <p class="place__paragraph">Es aquí donde nacieron los generadores modernos, así como los medios contemporáneos para transmisión de energía. Por eso pensamos que éste es el lugar perfecto para comprar una linterna dínamo para tu bici y que te sirva de ayuda en los caminos solitarios y oscuros durante tu aventura. Una linterna de GE te costará aproximadamente $10-$20.</p>
+          </div>
         </article>
         <article class="place">
-          <h1 class="title place__title">Erie, PA</h1>
+          <h2 class="place__title">Erie, PA</h2>
           <img class="place__image" src="../images/erie-pa.jpg" alt="Pennsylvania photograph">
           <div class="place__website">
             <p class="place__url-heading">URL</p>
             <a href="https://www.fws.gov/refuge/erie" class="place__link" target="_blank">www.fws.gov</a>
           </div>
-          <p class="place__paragraph place__paragraph_first">Que Erie, Pennsylvania, no te confunda con la palabra en Inglés “eerie” (escalofriante), aunque pueda serlo de vez en cuando, es otro lugar que vale la pena visitar por diferentes razones. Aunque es mayormente famoso por ser el lugar del Discurso Gettysburg, recitado por Abraham Lincoln durante la Guerra Civil, Pennsylvania también ha producido una comunidad Amish bastante grande.</p>
-          <p class="place__paragraph place__paragraph_second">La razón por la que te hemos traído aquí, si todavía no la has adivinado, se puede resumir en una palabra deliciosa: chocolate. Hershey's es una compañía basada en Pennsylvania. Con certeza, será una de las misiones más sabrosas que tendrás durante este tour, hazte un amigo Amish y disfruta una chocolatina en el Refugio Nacional de Vida Silvestre que se encuentra en la ruta a Eerie. Trata de tener una experiencia extra Eerie!</p>
-          <p class="place__paragraph place__paragraph_price">El precio de una chocolatina Hershey's: 60¢ aprox.</p>
+          <div class="place__description">
+            <p class="place__paragraph">Que Erie, Pennsylvania, no te confunda con la palabra en Inglés “eerie” (escalofriante), aunque pueda serlo de vez en cuando, es otro lugar que vale la pena visitar por diferentes razones. Aunque es mayormente famoso por ser el lugar del Discurso Gettysburg, recitado por Abraham Lincoln durante la Guerra Civil, Pennsylvania también ha producido una comunidad Amish bastante grande.</p>
+            <p class="place__paragraph">La razón por la que te hemos traído aquí, si todavía no la has adivinado, se puede resumir en una palabra deliciosa: chocolate. Hershey's es una compañía basada en Pennsylvania. Con certeza, será una de las misiones más sabrosas que tendrás durante este tour, hazte un amigo Amish y disfruta una chocolatina en el Refugio Nacional de Vida Silvestre que se encuentra en la ruta a Eerie. Trata de tener una experiencia extra Eerie!</p>
+            <p class="place__paragraph">El precio de una chocolatina Hershey's: 60¢ aprox.</p>
+          </div>
         </article>
         <article class="place">
-          <h1 class="title place__title">Ohio</h1>
+          <h2 class="place__title">Ohio</h2>
           <img class="place__image" src="../images/ohio.jpg" alt="Ohio photograph">
           <div class="place__website">
             <p class="place__url-heading">URL</p>
             <a href="https://www.cedarpoint.com/" class="place__link" target="_blank">cedarpoint.com</a>
           </div>
-          <p class="place__paragraph place__paragraph_first">Desde la ciudad universitaria de Columbus hasta la pristina línea costera de Cleveland, Ohio es verdaderamente una gema escondida. Los terremotos son sorprendentemente comunes en ésta región particular de Norte América, más de 200 han sido registrados con una magnitud de 2 o mayor desde 1776. Sin embargo, los terremotos no son los únicos que mueven éste estado central. Uno de los parques temáticos más grande y antiguo que te espera para SACUDIR tu mundo se encuentra en Sandusky, Ohio! Ésta será una de las aventuras más excitantes que completarás (si es que tienes nervios de acero). Toma un merecido descanso de la bici y móntate en cuantos juegos puedas antes de continuar tu viaje!</p>
-          <p class="place__paragraph place__paragraph_price">Precio de un ticket por día: cerca de $100.</p>
+          <div class="place__description">
+            <p class="place__paragraph">Desde la ciudad universitaria de Columbus hasta la pristina línea costera de Cleveland, Ohio es verdaderamente una gema escondida. Los terremotos son sorprendentemente comunes en ésta región particular de Norte América, más de 200 han sido registrados con una magnitud de 2 o mayor desde 1776. Sin embargo, los terremotos no son los únicos que mueven éste estado central. Uno de los parques temáticos más grande y antiguo que te espera para SACUDIR tu mundo se encuentra en Sandusky, Ohio! Ésta será una de las aventuras más excitantes que completarás (si es que tienes nervios de acero). Toma un merecido descanso de la bici y móntate en cuantos juegos puedas antes de continuar tu viaje!</p>
+            <p class="place__paragraph">Precio de un ticket por día: cerca de $100.</p>
+          </div>
         </article>
       </section>
       <section class="cover"> 
@@ -115,12 +129,14 @@
       </section>
     </main>
     <footer class="footer">
-      <ul class="footer__links">
-        <li><a href="https://yandex.com/maps" class="footer__link" target="_blank">Mapas</a></li>
-        <li><a href="https://yandex.com/weather/moscow" class="footer__link" target="_blank">Clima</a></li>
-        <li><a href="https://www.any.do" class="footer__link" target="_blank">Calendario</a></li>
-      </ul>
-      <p class="footer__copyright">&COPY; 2020<span class="footer__heart"> 	&#9829;</span>  Jaia Bautista</p>
+      <div class="footer__items">
+        <ul class="footer__links">
+          <li><a href="https://yandex.com/maps" class="footer__link" target="_blank">Mapas</a></li>
+          <li><a href="https://yandex.com/weather/moscow" class="footer__link" target="_blank">Clima</a></li>
+          <li><a href="https://www.any.do" class="footer__link" target="_blank">Calendario</a></li>
+        </ul>
+        <p class="footer__copyright">&COPY; 2020<span class="footer__heart"> 	&#9829;</span>  Jaia Bautista</p>
+      </div>
     </footer>
   </div>
 </body>
