@@ -1,7 +1,6 @@
 .page {
   -moz-osx-font-smoothing: grayscale;
   -webkit-font-smoothing: antialiased;
-  text-rendering: optimizeLegibility;
   display: grid;
   grid-template-areas: 'header header  header header'
   'main-content main-content main-content main-content'
@@ -10,6 +9,7 @@
   color: white;
   background-color: #2a2c2f;
   font-family: 'Inter', 'Arial', sans-serif;
+  text-rendering: optimizeLegibility;
 
 }
 
